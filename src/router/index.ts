@@ -1,12 +1,13 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import Tampilan from '../views/Tampilan.vue'
 
+
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'home',
     component: Tampilan
-  },
+  }
 
     //path: '/about',
     //name: 'about',
