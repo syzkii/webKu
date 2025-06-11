@@ -6,7 +6,7 @@
       id="myBtn"
       title="Go to top"
     >
-      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+      <i class="fas fa-chevron-up" aria-hidden="true"></i>
     </button>
 
     <header id="main-header">
@@ -83,7 +83,7 @@
           </div>
           <div class="col-md-5 col-sm-12 main-img h-25">
             <img
-              src="/frontend/assets/Programmer-Engineering-Development-Illustration-on-transparent-background-PNG.webp"
+              src="/Programmer-Engineering-Development-Illustration-on-transparent-background-PNG.webp"
               width="100%"
               height="100%"
               alt="Gambar ilustrasi"
@@ -102,7 +102,7 @@
           <div class="col-md-6 col-12">
             <div class="pray">
               <img
-                src="/frontend/assets/kiki.webp"
+                src="/kiki.webp"
                 crop="circle"
                 width="70%"
                 height="40%"
@@ -316,16 +316,17 @@ const skills = reactive({
     "CSS3",
     "jQuery",
     "PHP",
-    "Vue Js (learning)",
+    "Vue Js",
     "React Js (learning)",
     "MySQL",
+    "Laravel",
   ],
   tools: ["Git", "Bootstrap", "Github", "VSCode", "Tailwind CSS", "Linux"],
 });
 
 const projects = reactive([
   {
-    image: "proj1.webp",
+    image: "/proj1.webp",
     alt: "Foto Crud Login Session Dynamic",
     title: "CRUD Login Session Dynamic",
     description:
@@ -334,7 +335,7 @@ const projects = reactive([
     demo: null,
   },
   {
-    image: "proj1.webp",
+    image: "/proj1.webp",
     alt: "Foto Crud Login Session Static",
     title: "CRUD Login Session Static",
     description:
@@ -343,7 +344,7 @@ const projects = reactive([
     demo: null,
   },
   {
-    image: "proj1.webp",
+    image: "/proj1.webp",
     alt: "Website Crud Login Session Admin dan Operator",
     title: "CRUD Login Session Admin & Operator",
     description:
@@ -352,7 +353,7 @@ const projects = reactive([
     demo: null,
   },
   {
-    image: "proj2.webp",
+    image: "/proj2.webp",
     alt: "Website Karang Taruna Green Hill",
     title: "Karang Taruna Project",
     description:
@@ -361,7 +362,7 @@ const projects = reactive([
     demo: "https://karangtarunagh.000webhostapp.com/",
   },
   {
-    image: "Ramgan.webp",
+    image: "/Ramgan.webp",
     alt: "foto website jam tangan",
     title: "Website Jam Tangan",
     description:
@@ -398,7 +399,7 @@ const typewriteTexts = [
   "I Love U and Code",
   "hahahaha...",
 ];
-const period = 500;
+const period = 1000;
 
 const startTypewriter = (el) => {
   let loopNum = 0;
@@ -470,7 +471,7 @@ onUnmounted(() => {
 
 /* Contoh: Beberapa gaya dasar dari HTML asli */
 #myBtn {
-  display: block; /* Dikelola oleh v-show di Vue */
+  display: block;
   position: fixed;
   bottom: 20px;
   right: 30px;
@@ -482,11 +483,18 @@ onUnmounted(() => {
   color: white;
   cursor: pointer;
   padding: 10px 15px;
-  border-radius: 4px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #myBtn:hover {
   background-color: #555;
+}
+
+#myBtn i {
+  font-size: 1em;
 }
 
 /* Target kelas .project-card yang kita tambahkan.
